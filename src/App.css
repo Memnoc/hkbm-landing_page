@@ -1,10 +1,9 @@
+body {
+  background-color: #ffe4e1; /* Misty rose */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-body {
-  background-color: bisque;
+  text-align: left;
 }
