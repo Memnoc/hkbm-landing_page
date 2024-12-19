@@ -9,7 +9,15 @@ function App() {
       <div className="bg-gradient-to-b from-pink-100 to-purple-100 min-h-screen">
         <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200">
           <MenubarMenu>
-            <MenubarTrigger>Dolls</MenubarTrigger>
+            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
+              Gallery
+            </MenubarTrigger>
+            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
+              Social
+            </MenubarTrigger>
+            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
+              Contact
+            </MenubarTrigger>
           </MenubarMenu>
         </Menubar>
 
