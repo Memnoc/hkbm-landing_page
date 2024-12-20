@@ -1,7 +1,13 @@
 import "./App.css";
 import { Button } from "@/components/ui/button";
 import Image from "./assets/dolls/IMG_8230.jpeg";
-import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 function App() {
   return (
@@ -9,15 +15,54 @@ function App() {
       <div className="bg-gradient-to-b from-pink-100 to-purple-100 min-h-screen">
         <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200">
           <MenubarMenu>
-            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
+            <MenubarTrigger className="text-purple-600 hover:text-purple-800">
               Gallery
             </MenubarTrigger>
-            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
-              Social
+            <MenubarContent className="bg-white/95">
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Latest Dolls
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Custom Orders
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Customer Photos
+              </MenubarItem>
+            </MenubarContent>
+          </MenubarMenu>
+
+          <MenubarMenu>
+            <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+              Shop
             </MenubarTrigger>
-            <MenubarTrigger className="font-bold text-purple-700 hover:text-purple-900">
-              Contact
+            <MenubarContent className="bg-white/95">
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Ready to Ship
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Custom Order
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Gift Cards
+              </MenubarItem>
+            </MenubarContent>
+          </MenubarMenu>
+
+          <MenubarMenu>
+            <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+              About
             </MenubarTrigger>
+            <MenubarContent className="bg-white/95">
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Our Story
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Process
+              </MenubarItem>
+              <MenubarItem className="text-purple-600 hover:bg-pink-50">
+                Reviews
+              </MenubarItem>
+            </MenubarContent>
           </MenubarMenu>
         </Menubar>
 
