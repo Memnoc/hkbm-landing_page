@@ -8,7 +8,7 @@ import {
 
 export default function Navbar() {
   return (
-    <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200">
+    <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200 z-10">
       <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200">
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
