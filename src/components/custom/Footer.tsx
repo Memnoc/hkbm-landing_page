@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="bg-pink-50/80 border-t border-pink-200  py-12 w-full">
+    <footer className="bg-pink-50/80 border-t border-pink-200  py-10 w-full">
       <div className="container mx-auto px-8">
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-3 gap-28">
           {/* Contact */}
           <div>
             <h3 className="text-purple-700 font-bold mb-4">Contact</h3>
