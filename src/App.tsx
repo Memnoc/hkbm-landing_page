@@ -8,11 +8,12 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import Footer from "@/components/custom/Footer";
 
 function App() {
   return (
     <>
-      <div className="bg-gradient-to-b from-pink-100 to-purple-100 min-h-screen">
+      <div className="navbar_container bg-gradient-to-b from-pink-100 to-purple-100 min-h-screen">
         <Menubar className="fixed top-0 w-full bg-pink-100 backdrop-blur-sm border-b border-pink-200">
           <MenubarMenu>
             <MenubarTrigger className="text-purple-600 hover:text-purple-800">
@@ -66,7 +67,7 @@ function App() {
           </MenubarMenu>
         </Menubar>
 
-        <div className="container mx-auto px-8 pt-24">
+        <div className="content_container mx-auto px-8 pt-24">
           {" "}
           <div className="grid grid-cols-2 gap-8 items-center">
             {/* Left column - content */}
@@ -91,8 +92,8 @@ function App() {
               </div>
             </div>
 
-            {/* Right column - image */}
-            <div className="p-4">
+            {/* First page doll */}
+            <div className="image_container p-4">
               <img
                 src={Image}
                 alt="Cute plush toy"
@@ -100,10 +101,9 @@ function App() {
               />
             </div>
           </div>
-          {/* Increased pt for menu */}
-          {/* Your existing grid content */}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
