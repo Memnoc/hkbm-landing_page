@@ -5,6 +5,7 @@ import {
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
           </MenubarTrigger>
           <MenubarContent className="bg-white/95">
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Latest Dolls
+              <Link to="/gallery">Latest Dolls</Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
               Custom Orders
@@ -33,7 +34,7 @@ export default function Navbar() {
           </MenubarTrigger>
           <MenubarContent className="bg-white/95">
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Ready to Ship
+              <Link to="/shop">Orders </Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
               Custom Order
