@@ -1,17 +1,22 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "@/components/custom/Footer";
-import Navbar from "./components/custom/Navbar";
-import Hero from "./components/custom/Hero";
+import Navbar from "@/components/custom/Navbar";
+import { routes } from "./routes";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className="navbar_container bg-gradient-to-b from-pink-100 to-purple-100 min-h-screen">
         <Navbar />
-        <Hero />
+        <Routes>
+          {routes.map((route) => (
+            <Route key={route.path} path={route.path} element={route.element} />
+          ))}
+        </Routes>
       </div>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
