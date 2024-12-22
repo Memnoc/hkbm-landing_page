@@ -3,9 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "@/components/custom/Footer";
 import Navbar from "./components/custom/Navbar";
 import Hero from "./components/custom/Hero";
-import Gallery from "./pages/Gallery";
+import Gallery from "./pages/gallery/Gallery";
 import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
+import About from "./pages/about/About";
+import LatestDolls from "./pages/gallery/LatestDolls";
+import CustomerPhotos from "./pages/gallery/CustomerPhotos";
 
 function App() {
   return (
@@ -14,8 +17,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="shop" element={<Shop />} />
+          <Route path="gallery/all" element={<Gallery />} />
+          <Route path="/gallery/latest_dolls" element={<LatestDolls />} />
+          <Route path="/gallery/customer_photos" element={<CustomerPhotos />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

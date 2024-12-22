@@ -17,13 +17,13 @@ export default function Navbar() {
           </MenubarTrigger>
           <MenubarContent className="bg-white/95">
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              <Link to="/gallery">Latest Dolls</Link>
+              <Link to="/gallery/all">All Images</Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Custom Orders
+              <Link to="/gallery/latest_dolls">Latest Dolls</Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Customer Photos
+              <Link to="/gallery/customer_photos">Customer Photos</Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
@@ -34,13 +34,13 @@ export default function Navbar() {
           </MenubarTrigger>
           <MenubarContent className="bg-white/95">
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              <Link to="/shop">Orders </Link>
+              <Link to="/shop/orders">Orders </Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Custom Order
+              <Link to="/shop/custom_orders">Custom Orders </Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Gift Cards
+              <Link to="/shop/promotions">Promotions</Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
