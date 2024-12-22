@@ -5,12 +5,14 @@ import Navbar from "./components/custom/Navbar";
 import Hero from "./components/custom/Hero";
 import Gallery from "./pages/gallery/Gallery";
 import NotFound from "./pages/not_found/NotFound";
-import About from "./pages/about/About";
 import LatestDolls from "./pages/gallery/LatestDolls";
 import CustomerPhotos from "./pages/gallery/CustomerPhotos";
 import Orders from "./pages/shop/Orders";
 import CustomOrders from "./pages/shop/CustomOrders";
 import Promotions from "./pages/shop/Promotions";
+import OurStory from "./pages/about/OurStory";
+import Process from "./pages/about/Process";
+import Reviews from "./pages/about/Reviews";
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
           <Route path="/shop/custom_orders" element={<CustomOrders />} />
           <Route path="/shop/promotions" element={<Promotions />} />
           {/* About routes */}
-          <Route path="/about" element={<About />} />
+          <Route path="/about/our_story" element={<OurStory />} />
+          <Route path="/about/process" element={<Process />} />
+          <Route path="/about/reviews" element={<Reviews />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -51,13 +51,13 @@ export default function Navbar() {
           </MenubarTrigger>
           <MenubarContent className="bg-white/95">
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Our Story
+              <Link to="/about/our_story">Our Story</Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Process
+              <Link to="/about/process">Process</Link>
             </MenubarItem>
             <MenubarItem className="text-purple-600 hover:bg-pink-50">
-              Reviews
+              <Link to="/about/reviews">Reviews</Link>
             </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
