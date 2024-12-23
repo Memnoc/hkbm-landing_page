@@ -6,10 +6,16 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { Link } from "react-router-dom";
+import logo from "../../assets/hkbm-assets/svg/logo-no-background.svg";
 
 export default function Navbar() {
   return (
     <Menubar className="fixed top-0 w-full bg-pink-100 border-b border-pink-200 z-10">
+      <img
+        src={logo}
+        alt="Company logo"
+        className="h-6 md:h lg:h w-auto fixed right-4"
+      />
       <MenubarMenu>
         <MenubarTrigger className="text-purple-600 hover:text-purple-800">
           Gallery
