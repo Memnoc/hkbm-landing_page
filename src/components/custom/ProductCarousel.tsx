@@ -6,6 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "@/assets/dolls/IMG_8230.jpeg";
 
 export default function ProductCarousel() {
   return (
@@ -28,9 +29,11 @@ export default function ProductCarousel() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-3xl font-semibold">
-                        {index + 1}
-                      </span>
+                      <img
+                        src={Image}
+                        alt="Cute plush doll"
+                        className="rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300 hover:shadow-2xl filter brightness-105 hover:brightness-110 w-full"
+                      />
                     </CardContent>
                   </Card>
                 </div>
