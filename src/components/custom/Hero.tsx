@@ -20,10 +20,10 @@ export default function Hero() {
               <span className="font-bold text-pink-600">a doll for you</span>
             </p>
             <div className="flex gap-4">
-              <Button className="bg-purple-400 hover:bg-purple-500 text-white rounded">
+              <Button className="bg-purple-400 hover:bg-purple-500 text-white rounded w-32">
                 Users feedback
               </Button>
-              <Button className="bg-pink-400 hover:bg-pink-500 text-white rounded">
+              <Button className="bg-pink-400 hover:bg-pink-500 text-white rounded w-32">
                 Get your doll
               </Button>
             </div>
@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="image_container p-4">
             <img
               src={Image}
-              alt="Cute plush toy"
+              alt="Cute plush doll"
               className="rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300 hover:shadow-2xl filter brightness-105 hover:brightness-110"
             />
           </div>
