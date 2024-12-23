@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "@/assets/dolls/IMG_8230.jpeg";
+import ProductCarousel from "./ProductCarousel";
 
 export default function Hero() {
   return (
     <>
+      {/* Content */}
       <div className="content_container mx-auto px-8 pt-24">
         {" "}
         <div className="grid grid-cols-2 gap-8 items-center">
@@ -19,6 +21,7 @@ export default function Hero() {
               Submit your request and design and we will turn into{" "}
               <span className="font-bold text-pink-600">a doll for you</span>
             </p>
+            {/* Buttons */}
             <div className="flex gap-4">
               <Button className="bg-purple-400 hover:bg-purple-500 text-white rounded w-32">
                 Users feedback
@@ -39,6 +42,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Carousel */}
+      <ProductCarousel />
     </>
   );
 }
