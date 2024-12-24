@@ -3,4 +3,5 @@ export interface CarouselItem {
   name: string;
   image: string;
   price: string;
+  description: string;
 }

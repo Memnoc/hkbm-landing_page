@@ -22,20 +22,34 @@ export default function ProductCarousel() {
         <Carousel
           opts={{
             align: "center",
+            loop: true,
           }}
-          className="w-full max-w-3xl"
+          className="w-full max-w-5xl px-4"
         >
           <CarouselContent>
             {items.map((item) => (
               <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="rounded-3xl shadow-xl hover:scale-105 transition-transform duration-300 hover:shadow-2xl filter brightness-105 hover:brightness-110 w-full"
-                      />
+                    <CardContent className="flex flex-col items-center p-6 h-full">
+                      <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-3xl">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="object-cover w-full h-full hover:scale-105 transition-transform duration-300 shadow-lg"
+                        />
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-xl font-bold text-purple-700">
+                          {item.name}
+                        </h3>
+                        <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                          {item.description}
+                        </p>
+                        <p className="text-lg font-semibold text-pink-600 mt-2">
+                          {item.price}
+                        </p>
+                      </div>
                     </CardContent>
                   </Card>
                 </div>
