@@ -15,7 +15,7 @@ export default function ProductCarousel() {
     <div className="mt-16">
       {" "}
       {/* Container for both header and carousel */}
-      <h2 className="text-2xl font-bold text-purple-700 text-center mb-8">
+      <h2 className="text-2xl font-bold text-purple-700 text-center mb-2">
         Best Sellers
       </h2>
       <div className="w-full flex justify-center items-center">
@@ -24,7 +24,7 @@ export default function ProductCarousel() {
             align: "center",
             loop: true,
           }}
-          className="w-full max-w-5xl px-4"
+          className="w-full max-w-5xl px-8 py-8"
         >
           <CarouselContent>
             {items.map((item) => (
@@ -56,8 +56,8 @@ export default function ProductCarousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="text-lg font-semibold text-purple-800" />
+          <CarouselNext className="text-lg font-semibold text-purple-800" />
         </Carousel>
       </div>
     </div>
