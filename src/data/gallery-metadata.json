@@ -1,0 +1,82 @@
+{
+  "animals": {
+    "bunnies": {
+      "IMG_8216": {
+        "name": "Cloud Ears Bunny",
+        "price": "29.99",
+        "description": "Sweet bunny with a cozy mint colored outfit",
+        "category": "bestseller",
+        "available": true,
+        "materials": ["velvet yarn", "cotton yarn", "safety eyes"]
+      },
+      "IMG_8238": {
+        "name": "Cozy Gray Bunny",
+        "price": "34.99",
+        "description": "Soft gray bunny in winter overalls with blue eyes",
+        "category": "new",
+        "available": true,
+        "materials": ["plush yarn", "cotton yarn", "safety eyes"]
+      },
+      "Cute Ribbon Bunny": {
+        "name": "Cute Ribbon Bunny",
+        "price": "34.99",
+        "description": "Soft gray bunny in winter overalls with blue eyes",
+        "category": "new",
+        "available": true,
+        "materials": ["plush yarn", "cotton yarn", "safety eyes"]
+      }
+    },
+    "cats": {
+      "IMG_8224": {
+        "name": "Red Kitty",
+        "price": "29.99",
+        "description": "Adorable red cat plushie with mint accent",
+        "category": "bestseller",
+        "available": true,
+        "materials": ["velvet yarn", "safety eyes", "embroidery thread"]
+      }
+    },
+    "fish": {
+      "IMG_8239": {
+        "name": "Rainbow Fish Collection",
+        "price": "24.99",
+        "description": "Colorful fish ornaments in various vibrant colors including pink, red, turquoise and navy",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "wooden beads"]
+      }
+    }
+  },
+  "dolls": {
+    "genshin": {
+      "IMG_8231": {
+        "name": "Kimono Girl",
+        "price": "49.99",
+        "description": "Detailed doll in traditional-inspired kimono with ginger hair",
+        "category": "bestseller",
+        "available": true,
+        "materials": ["cotton yarn", "embroidery thread", "safety eyes"]
+      }
+    },
+    "kimono": {
+      "IMG_8220": {
+        "name": "Mint Princess",
+        "price": "42.99",
+        "description": "Delicate doll in white and mint green with floral accents",
+        "category": "new",
+        "available": true,
+        "materials": ["velvet yarn", "cotton yarn", "safety eyes"]
+      }
+    },
+    "winter": {
+      "IMG_8236": {
+        "name": "Mint Dreams",
+        "price": "39.99",
+        "description": "Sweet doll in soft mint overalls with fuzzy texture",
+        "category": "bestseller",
+        "available": true,
+        "materials": ["plush yarn", "safety eyes", "embroidery details"]
+      }
+    }
+  }
+}
