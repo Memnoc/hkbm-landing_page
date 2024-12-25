@@ -23,7 +23,7 @@ export default function Gallery() {
                 </h2>
                 <p className="text-sm text-gray-600 mt-1">{item.description}</p>
                 <p className="text-pink-600 font-medium mt-2">{item.price}</p>
-                {!item.availble && (
+                {!item.available && (
                   <span className="text-xs text-white bg-pink-500 px-2 rounded mt-2 inline-block">
                     Sold out
                   </span>

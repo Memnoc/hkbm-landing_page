@@ -2,7 +2,7 @@ import { CarouselItem } from "./Carousel";
 
 export interface GalleryItem extends CarouselItem {
   category: "new" | "bestseller" | "custom";
-  availble: boolean;
+  available: boolean;
   dimensions?: string;
   materials?: string[];
 }

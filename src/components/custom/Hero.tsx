@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Image from "@/assets/dolls/IMG_8230.jpeg";
+import Image from "@/assets/dolls/front-page-doll.jpeg";
 import ProductCarousel from "./ProductCarousel";
 
 export default function Hero() {
