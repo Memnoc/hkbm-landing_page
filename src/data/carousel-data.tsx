@@ -1,12 +1,12 @@
 import { CarouselItem } from "@/types/Carousel";
-import IMG_7230 from "@/assets/dolls/Crochet/dolls/winter/IMG_7230.jpeg";
-import IMG_7238 from "@/assets/dolls/Crochet/dolls/winter/IMG_7238.jpeg";
+import CloudGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_CloudGirl_Front.jpg";
+import SunnyGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_SunnyGirl_Front.jpg";
 
 export const carouselItems: CarouselItem[] = [
   {
     id: 1,
-    name: "Cloud Hat Doll",
-    image: IMG_7230,
+    name: "Girl doll with cloud hat",
+    image: CloudGirl,
     price: "$29.99",
     description:
       "Sweet doll with cozy cloud hat, perfect for dreamy adventures",
@@ -14,10 +14,9 @@ export const carouselItems: CarouselItem[] = [
 
   {
     id: 2,
-    name: "Blue Dress Doll",
-    image: IMG_7238,
+    name: "Girl doll with colorful dress",
+    image: SunnyGirl,
     price: "$34.99",
-    description:
-      "Elegant doll in a navy blue dress with delicate white details",
+    description: "Happy doll full of all the colors of the rainbow",
   },
 ];

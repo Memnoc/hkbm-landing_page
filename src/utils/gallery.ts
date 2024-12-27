@@ -5,9 +5,10 @@ import {
   SubCollection,
   GalleryData,
 } from "@/types/Gallery";
+import { formatItemName } from "./formatItemNames";
 
 // INFO: Dinamically laod JPEGS
-const images = import.meta.glob("/src/assets/dolls/Crochet/**/**/*.*", {
+const images = import.meta.glob("/src/assets/dolls/Crochet/**/**/**/*.*", {
   eager: true,
   as: "url",
 }) as Record<string, string>;
@@ -29,29 +30,65 @@ export const getGalleryItems = async (): Promise<GalleryItem[]> => {
         .pop()
         ?.replace(/\.(jpg|jpeg)$/, "") || "";
 
-    //INFO: Type guards
+    // Add debug logging
+    console.log("Processing file:", {
+      fullPath: path,
+      pathParts,
+      collection,
+      subCollection,
+      fileName,
+    });
+
     if (!isMainCollection(collection) || !isSubCollection(subCollection)) {
-      console.warn(`Invalid collection or subcollection for ${fileName}`);
+      console.warn(
+        `Invalid collection or subcollection: ${collection}/${subCollection}`,
+      );
       return createDefaultItem(index, fileName, url, "animals", "bunnies");
     }
 
-    //NOTE: Get metadata with type checking
     try {
+      // Log the metadata path we're trying to access
+      console.log("Looking for metadata at:", {
+        collection,
+        subCollection,
+        fileName,
+        hasMetadata: !!typedMetadata[collection]?.[subCollection]?.[fileName],
+        availableCollections: Object.keys(typedMetadata),
+        availableSubCollections: collection
+          ? Object.keys(typedMetadata[collection] || {})
+          : [],
+      });
+
       const metadata = typedMetadata[collection]?.[subCollection]?.[fileName];
-      if (metadata) {
-        return {
-          ...metadata,
-          id: index + 1,
-          image: url,
+
+      if (!metadata) {
+        console.warn(
+          `No metadata found for ${fileName} in ${collection}/${subCollection}`,
+        );
+        return createDefaultItem(
+          index,
+          fileName,
+          url,
           collection,
           subCollection,
-        } as GalleryItem;
+        );
       }
+
+      // Log the found metadata
+      console.log("Found metadata:", metadata);
+
+      return {
+        ...createDefaultItem(index, fileName, url, collection, subCollection), // Base defaults
+        ...metadata, // Override with actual metadata
+        id: index + 1,
+        image: url,
+        collection,
+        subCollection,
+      } as GalleryItem;
     } catch (error) {
       console.error(`Error accessing metadata for ${fileName}:`, error);
+      return createDefaultItem(index, fileName, url, collection, subCollection);
     }
-
-    return createDefaultItem(index, fileName, url, collection, subCollection);
   });
 };
 
@@ -62,6 +99,7 @@ function isMainCollection(value: string): value is MainCollection {
 
 function isSubCollection(value: string): value is SubCollection {
   return [
+    "animal_misc",
     "bunnies",
     "cats",
     "chickens",
@@ -70,13 +108,12 @@ function isSubCollection(value: string): value is SubCollection {
     "pokemons",
     "genshin",
     "kimono",
+    "lady_unicorn",
     "peacock",
-    "rainbow",
-    "winter",
+    "weather_doll",
   ].includes(value);
 }
 
-// NOTE: Helper function for default item creation
 // WARN: This is a fallback when data is not found
 function createDefaultItem(
   index: number,
@@ -87,7 +124,7 @@ function createDefaultItem(
 ): GalleryItem {
   return {
     id: index + 1,
-    name: fileName || "Unnamed Item",
+    name: formatItemName(fileName) || "Unnamed Item",
     price: "TBD",
     description: "Description pending",
     category: "new",

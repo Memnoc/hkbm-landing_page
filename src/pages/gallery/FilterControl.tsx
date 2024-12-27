@@ -102,10 +102,10 @@ export default function FilterControls({
                     Kimono
                   </SelectItem>
                   <SelectItem
-                    value="winter"
+                    value="lady_unicorn"
                     className="text-purple-700 hover:bg-pink-50"
                   >
-                    Winter
+                    Lady Unicorn
                   </SelectItem>
                 </>
               )}

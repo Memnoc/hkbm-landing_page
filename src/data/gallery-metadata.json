@@ -1,81 +1,139 @@
 {
   "animals": {
+    "animal_misc": {
+      "Platipus": {
+        "name": "Platipus",
+        "price": "24.99",
+        "description": "A cute and cuddly platypus plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Rainbow Frog": {
+        "name": "Rainbow Frog",
+        "price": "22.99",
+        "description": "Cheerful frog with rainbow accents",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      }
+    },
     "bunnies": {
-      "IMG_8216": {
-        "name": "Cloud Ears Bunny",
+      "Bunny_L_Onesies_Green": {
+        "name": "Green Onesies Bunny (Large)",
+        "price": "34.99",
+        "description": "Adorable bunny in mint green onesies",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Bunny_L_Onesies_Grey": {
+        "name": "Grey Onesies Bunny (Large)",
+        "price": "34.99",
+        "description": "Adorable bunny in grey onesies",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Bunny_L_Onesies_Red": {
+        "name": "Red Onesies Bunny (Large)",
+        "price": "34.99",
+        "description": "Adorable bunny in red onesies",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Bunny_M_DungareeGreen_Back": {
+        "name": "Green Dungaree Bunny Back View (Medium)",
         "price": "29.99",
-        "description": "Sweet bunny with a cozy mint colored outfit",
-        "category": "bestseller",
-        "available": true,
-        "materials": ["velvet yarn", "cotton yarn", "safety eyes"]
-      },
-      "IMG_8238": {
-        "name": "Cozy Gray Bunny",
-        "price": "34.99",
-        "description": "Soft gray bunny in winter overalls with blue eyes",
+        "description": "Cute bunny in green dungarees",
         "category": "new",
         "available": true,
-        "materials": ["plush yarn", "cotton yarn", "safety eyes"]
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
-      "Cute Ribbon Bunny": {
-        "name": "Cute Ribbon Bunny",
-        "price": "34.99",
-        "description": "Soft gray bunny in winter overalls with blue eyes",
+      "Bunny_M_DungareeGreen_Front": {
+        "name": "Green Dungaree Bunny Front View (Medium)",
+        "price": "29.99",
+        "description": "Cute bunny in green dungarees",
         "category": "new",
         "available": true,
-        "materials": ["plush yarn", "cotton yarn", "safety eyes"]
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       }
     },
     "cats": {
-      "IMG_8224": {
-        "name": "Red Kitty",
-        "price": "29.99",
-        "description": "Adorable red cat plushie with mint accent",
-        "category": "bestseller",
-        "available": true,
-        "materials": ["velvet yarn", "safety eyes", "embroidery thread"]
-      }
-    },
-    "fish": {
-      "IMG_8239": {
-        "name": "Rainbow Fish Collection",
-        "price": "24.99",
-        "description": "Colorful fish ornaments in various vibrant colors including pink, red, turquoise and navy",
+      "CatHead_M_Type04_Front": {
+        "name": "Cat Head Plushie Type 4 (Medium)",
+        "price": "19.99",
+        "description": "Adorable cat head plushie",
         "category": "new",
         "available": true,
-        "materials": ["cotton yarn", "safety eyes", "wooden beads"]
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Blue_Front": {
+        "name": "Blue Fruit Cat",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       }
     }
   },
   "dolls": {
     "genshin": {
-      "IMG_8231": {
-        "name": "Kimono Girl",
-        "price": "49.99",
-        "description": "Detailed doll in traditional-inspired kimono with ginger hair",
-        "category": "bestseller",
+      "Genshin_Kokomi_Front": {
+        "name": "Kokomi Doll",
+        "price": "44.99",
+        "description": "Sangonomiya Kokomi inspired doll",
+        "category": "new",
         "available": true,
-        "materials": ["cotton yarn", "embroidery thread", "safety eyes"]
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_Nahida_Front": {
+        "name": "Nahida Doll",
+        "price": "44.99",
+        "description": "Nahida inspired doll",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_RaidenShogun_Front": {
+        "name": "Raiden Shogun Doll",
+        "price": "44.99",
+        "description": "Raiden Shogun inspired doll",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
       }
     },
     "kimono": {
-      "IMG_8220": {
-        "name": "Mint Princess",
-        "price": "42.99",
-        "description": "Delicate doll in white and mint green with floral accents",
+      "Doll_KimonoPurple_Front": {
+        "name": "Purple Kimono Doll",
+        "price": "49.99",
+        "description": "Elegant doll in purple kimono",
         "category": "new",
         "available": true,
-        "materials": ["velvet yarn", "cotton yarn", "safety eyes"]
-      }
-    },
-    "winter": {
-      "IMG_8236": {
-        "name": "Mint Dreams",
-        "price": "39.99",
-        "description": "Sweet doll in soft mint overalls with fuzzy texture",
-        "category": "bestseller",
-        "available": true,
-        "materials": ["plush yarn", "safety eyes", "embroidery details"]
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
       }
     }
   }

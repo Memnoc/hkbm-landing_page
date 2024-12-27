@@ -7,11 +7,12 @@ export type SubCollection =
   | "fish"
   | "pigs"
   | "pokemons"
+  | "animal_misc"
   | "genshin"
   | "kimono"
+  | "lady_unicorn"
   | "peacock"
-  | "rainbow"
-  | "winter";
+  | "weather_doll";
 
 export interface GalleryMetadata {
   name: string;
