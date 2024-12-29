@@ -32,7 +32,7 @@ export default function ProductCarousel() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex flex-col items-center p-6 h-full">
-                      <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-3xl">
+                      <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-2xl">
                         <img
                           src={item.image}
                           alt={item.name}

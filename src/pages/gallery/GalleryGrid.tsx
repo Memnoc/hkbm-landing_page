@@ -11,16 +11,18 @@ export default function GalleryGrid({ items }: GalleryGridProps) {
       {items.map((item) => (
         <Card key={item.id}>
           <CardContent>
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full aspect-square object-cover rounded-lg mb-4"
-            />
-            <h2 className="text-lg font-semibold text-purple-700">
-              {item.name}
-            </h2>
-            <p className="text-sm text-gray-600 mt-1">{item.description}</p>
-            <p className="text-pink-600 font-medium mt-2">${item.price}</p>
+            <div className="pt-6">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full aspect-square object-cover rounded-2xl"
+              />
+              <h2 className="text-lg font-semibold text-purple-700 mt-6">
+                {item.name}
+              </h2>
+              <p className="text-sm text-gray-600 mt-2">{item.description}</p>
+              <p className="text-pink-600 font-medium mt-2">${item.price}</p>
+            </div>
           </CardContent>
         </Card>
       ))}
