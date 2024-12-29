@@ -61,7 +61,7 @@
       },
 
       "Bunny_M_DungareeRed_Front": {
-        "name": "Bunny_M_DungareeRed_Front",
+        "name": "Bunny in Red Dungaree (M)",
         "price": "29.99",
         "description": "Cute bunny in red dungarees",
         "category": "new",
@@ -70,9 +70,9 @@
       },
 
       "Bunny_M_Tutu_Pose": {
-        "name": "Bunny_M_Tutu_Front",
+        "name": "Tutu Bunny (M)",
         "price": "29.99",
-        "description": "Cute bunny in tutu",
+        "description": "Cute bunny in pink tutu",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -185,47 +185,47 @@
     },
     "fish": {
       "Bagtag_Whale_Blue": {
-        "name": "Bagtag_Whale_Blue",
+        "name": "Blue Bagtag Whale",
         "price": "34.99",
-        "description": "Whale bag tag blue",
+        "description": "Whale Bag Tag Blue with little space for objects",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Purse_PufferFish_S_Blue_Top": {
-        "name": "Purse_PufferFish_S_Blue_Top",
+        "name": "Blue Purse PufferFish (S)",
         "price": "34.99",
-        "description": "Purse Puffer fish blue",
+        "description": "Puffer Fish-shaped purse",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Purse_PufferFish_S_Green_Top": {
-        "name": "Purse_PufferFish_S_Green_Top",
+        "name": "Green Purse_PufferFish (S)",
         "price": "34.99",
-        "description": "Purse Puffer fish green",
+        "description": "Puffer Fish-shaped purse",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Purse_PufferFish_S_Pink_Size": {
-        "name": "Purse_PufferFish_S_Pink_Top",
+        "name": "Pink Purse_PufferFish (S)",
         "price": "34.99",
-        "description": "Purse Puffer fish pink",
+        "description": "Puffer Fish-shaped purse",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Purse_PufferFish_S_Red_Top": {
-        "name": "Purse_PufferFish_S_Red_Top",
+        "name": "Red Purse PufferFish (S)",
         "price": "34.99",
-        "description": "Purse Puffer fish red",
+        "description": "Puffer Fish-shaped purse",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Purse_PufferFish_S_Group": {
-        "name": "Purse_PufferFish_S_Group",
+        "name": "Puffer Fish Group",
         "price": "34.99",
         "description": "Puffer fish group",
         "category": "new",
@@ -243,15 +243,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "CatHead_S_Type02_Front": {
-        "name": "CatHead_S_Type02_Front",
-        "price": "19.99",
-        "description": "Adorable cat head plushie",
-        "category": "new",
-        "available": true,
-        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
-      },
-      "CatHead_S_Type02_Back": {
-        "name": "CatHead_S_Type02_Back",
+        "name": "White & Creamy CatHead (S)",
         "price": "19.99",
         "description": "Adorable cat head plushie",
         "category": "new",
@@ -259,7 +251,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "CatHead_S_Type03_Front": {
-        "name": "CatHead_S_Type03_Front",
+        "name": "White & Gray CatHead (S)",
         "price": "19.99",
         "description": "Adorable cat head plushie",
         "category": "new",
@@ -291,7 +283,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "FruitCat_Lemon_Front": {
-        "name": "FruitCat_Lemon_Front",
+        "name": "FruitCat Lemon",
         "price": "24.99",
         "description": "Cute lemon cat with fruit theme",
         "category": "new",
@@ -299,7 +291,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "FruitCat_Mint_Front": {
-        "name": "FruitCat_Mint_Front",
+        "name": "FruitCat Mint",
         "price": "24.99",
         "description": "Cute mint cat with fruit theme",
         "category": "new",
@@ -307,7 +299,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "FruitCat_Strawberry_Front": {
-        "name": "FruitCat_Strawberry_Front",
+        "name": "FruitCat Strawberry",
         "price": "24.99",
         "description": "Cute strawberry cat with fruit theme",
         "category": "new",
@@ -315,7 +307,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "FruitCat_Watermelon_Front": {
-        "name": "FruitCat_Watermelon_Front",
+        "name": "FruitCat Watermelon",
         "price": "24.99",
         "description": "Cute watermelon cat with fruit theme",
         "category": "new",
@@ -323,7 +315,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "Cat_Full_Body_M_Black_Front": {
-        "name": "Cat_Full_Body_M_Black_Front",
+        "name": "Full body grey cat with pink tutu (M)",
         "price": "24.99",
         "description": "Cute grey cat with pink tutu collar",
         "category": "new",
