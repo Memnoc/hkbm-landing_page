@@ -235,16 +235,7 @@
     },
     "cats": {
       "CatHead_S_Type01_Front": {
-        "name": "CatHead_M_Type01_Front",
-        "price": "19.99",
-        "description": "Adorable cat head plushie",
-        "category": "new",
-        "available": true,
-        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
-      },
-
-      "CatHead_S_Type01_Back": {
-        "name": "CatHead_S_Type01_Back",
+        "name": "Brown Cat Head (M)",
         "price": "19.99",
         "description": "Adorable cat head plushie",
         "category": "new",
@@ -276,7 +267,7 @@
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
       "CatHead_M_Type04_Front": {
-        "name": "CatHead_M_Type04_Front",
+        "name": "Orange & Cream CatHead (M)",
         "price": "24.99",
         "description": "Cute grey cat with pink tutu collar",
         "category": "new",
@@ -294,7 +285,7 @@
       "FruitCat_Gray_Front": {
         "name": "Gray Fruit Cat",
         "price": "24.99",
-        "description": "Cute blue cat with fruit theme",
+        "description": "Cute gray cat with fruit theme",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -302,7 +293,7 @@
       "FruitCat_Lemon_Front": {
         "name": "FruitCat_Lemon_Front",
         "price": "24.99",
-        "description": "Cute blue cat with fruit theme",
+        "description": "Cute lemon cat with fruit theme",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -310,7 +301,7 @@
       "FruitCat_Mint_Front": {
         "name": "FruitCat_Mint_Front",
         "price": "24.99",
-        "description": "Cute blue cat with fruit theme",
+        "description": "Cute mint cat with fruit theme",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -318,7 +309,7 @@
       "FruitCat_Strawberry_Front": {
         "name": "FruitCat_Strawberry_Front",
         "price": "24.99",
-        "description": "Cute blue cat with fruit theme",
+        "description": "Cute strawberry cat with fruit theme",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -326,7 +317,7 @@
       "FruitCat_Watermelon_Front": {
         "name": "FruitCat_Watermelon_Front",
         "price": "24.99",
-        "description": "Cute blue cat with fruit theme",
+        "description": "Cute watermelon cat with fruit theme",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
