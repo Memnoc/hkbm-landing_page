@@ -58,13 +58,227 @@
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+
+      "Bunny_M_DungareeRed_Front": {
+        "name": "Bunny_M_DungareeRed_Front",
+        "price": "29.99",
+        "description": "Cute bunny in red dungarees",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+
+      "Bunny_M_Tutu_Pose": {
+        "name": "Bunny_M_Tutu_Front",
+        "price": "29.99",
+        "description": "Cute bunny in tutu",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      }
+    },
+    "chickens": {
+      "ChickenHen_S_Right": {
+        "name": "ChickenHen_S_Right",
+        "price": "34.99",
+        "description": "Adorable chicken in red suit",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "ChickenHen_S_Left": {
+        "name": "ChickenHen_S_Left",
+        "price": "34.99",
+        "description": "Adorable chicken in red suit",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      }
+    },
+
+    "pigs": {
+      "Piglet_S_Front": {
+        "name": "Piglet_S_Front",
+        "price": "34.99",
+        "description": "Adorable pink piglet",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+
+      "Piglet_S_Back": {
+        "name": "Piglet_S_Back",
+        "price": "34.99",
+        "description": "Adorable pink piglet",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      }
+    },
+    "pokemons": {
+      "Pokemon_Articuno_Front": {
+        "name": "Pokemon_Articuno_Front",
+        "price": "34.99",
+        "description": "Pokemon Articuno",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+
+      "Pokemon_Articuno_Back": {
+        "name": "Pokemon_Articuno_Back",
+        "price": "34.99",
+        "description": "Pokemon Articuno",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Articuno_Persp": {
+        "name": "Pokemon_Articuno_Persp",
+        "price": "34.99",
+        "description": "Pokemon Articuno",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Articuno_Side": {
+        "name": "Pokemon_Articuno_Front",
+        "price": "34.99",
+        "description": "Pokemon Articuno",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Zapdos_Front": {
+        "name": "Pokemon_Zapdos_Front",
+        "price": "34.99",
+        "description": "Pokemon Zapdos",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Zapdos_Back": {
+        "name": "Pokemon_Zapdos_Back",
+        "price": "34.99",
+        "description": "Pokemon Zapdos",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Zapdos_Persp": {
+        "name": "Pokemon_Zapdos_Persp",
+        "price": "34.99",
+        "description": "Pokemon Zapdos",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Pokemon_Zapdos_Side": {
+        "name": "Pokemon_Zapdos_Front",
+        "price": "34.99",
+        "description": "Pokemon Zapdos",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      }
+    },
+    "fish": {
+      "Bagtag_Whale_Blue": {
+        "name": "Bagtag_Whale_Blue",
+        "price": "34.99",
+        "description": "Whale bag tag blue",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Purse_PufferFish_S_Blue_Top": {
+        "name": "Purse_PufferFish_S_Blue_Top",
+        "price": "34.99",
+        "description": "Purse Puffer fish blue",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Purse_PufferFish_S_Green_Top": {
+        "name": "Purse_PufferFish_S_Green_Top",
+        "price": "34.99",
+        "description": "Purse Puffer fish green",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Purse_PufferFish_S_Pink_Size": {
+        "name": "Purse_PufferFish_S_Pink_Top",
+        "price": "34.99",
+        "description": "Purse Puffer fish pink",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Purse_PufferFish_S_Red_Top": {
+        "name": "Purse_PufferFish_S_Red_Top",
+        "price": "34.99",
+        "description": "Purse Puffer fish red",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Purse_PufferFish_S_Group": {
+        "name": "Purse_PufferFish_S_Group",
+        "price": "34.99",
+        "description": "Puffer fish group",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       }
     },
     "cats": {
-      "CatHead_M_Type04_Front": {
-        "name": "Cat Head Plushie Type 4 (Medium)",
+      "CatHead_S_Type01_Front": {
+        "name": "CatHead_M_Type01_Front",
         "price": "19.99",
         "description": "Adorable cat head plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+
+      "CatHead_S_Type01_Back": {
+        "name": "CatHead_S_Type01_Back",
+        "price": "19.99",
+        "description": "Adorable cat head plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "CatHead_S_Type02_Front": {
+        "name": "CatHead_S_Type02_Front",
+        "price": "19.99",
+        "description": "Adorable cat head plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "CatHead_S_Type02_Back": {
+        "name": "CatHead_S_Type02_Back",
+        "price": "19.99",
+        "description": "Adorable cat head plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "CatHead_S_Type03_Front": {
+        "name": "CatHead_S_Type03_Front",
+        "price": "19.99",
+        "description": "Adorable cat head plushie",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "CatHead_M_Type04_Front": {
+        "name": "CatHead_M_Type04_Front",
+        "price": "24.99",
+        "description": "Cute grey cat with pink tutu collar",
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
@@ -76,15 +290,89 @@
         "category": "new",
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Gray_Front": {
+        "name": "Gray Fruit Cat",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Lemon_Front": {
+        "name": "FruitCat_Lemon_Front",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Mint_Front": {
+        "name": "FruitCat_Mint_Front",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Strawberry_Front": {
+        "name": "FruitCat_Strawberry_Front",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "FruitCat_Watermelon_Front": {
+        "name": "FruitCat_Watermelon_Front",
+        "price": "24.99",
+        "description": "Cute blue cat with fruit theme",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
+      "Cat_Full_Body_M_Black_Front": {
+        "name": "Cat_Full_Body_M_Black_Front",
+        "price": "24.99",
+        "description": "Cute grey cat with pink tutu collar",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       }
     }
   },
   "dolls": {
     "genshin": {
-      "Genshin_Kokomi_Front": {
-        "name": "Kokomi Doll",
+      "Genshin_Group": {
+        "name": "Genshin Group",
         "price": "44.99",
-        "description": "Sangonomiya Kokomi inspired doll",
+        "description": "All the genshin dolls",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_Kokomi_Front": {
+        "name": "Kokomi (front)",
+        "price": "44.99",
+        "description": "Sangonomiya Kokomi inspired ",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_Kokomi_Back": {
+        "name": "Kokomi (back)",
+        "price": "44.99",
+        "description": "Sangonomiya Kokomi inspired ",
         "category": "new",
         "available": true,
         "materials": [
@@ -95,9 +383,9 @@
         ]
       },
       "Genshin_Nahida_Front": {
-        "name": "Nahida Doll",
+        "name": "Nahida (front)",
         "price": "44.99",
-        "description": "Nahida inspired doll",
+        "description": "Nahida inspired ",
         "category": "new",
         "available": true,
         "materials": [
@@ -107,10 +395,36 @@
           "accessories"
         ]
       },
-      "Genshin_RaidenShogun_Front": {
-        "name": "Raiden Shogun Doll",
+      "Genshin_Nahida_Back": {
+        "name": "Nahida (back)",
         "price": "44.99",
-        "description": "Raiden Shogun inspired doll",
+        "description": "Nahida inspired ",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_Raiden_Shogun_Front": {
+        "name": "Raiden Shogun (front)",
+        "price": "44.99",
+        "description": "Raiden Shogun inspired ",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Genshin_Raiden_Shogun_Back": {
+        "name": "Raiden Shogun (back)",
+        "price": "44.99",
+        "description": "Raiden Shogun inspired ",
         "category": "new",
         "available": true,
         "materials": [
@@ -122,10 +436,134 @@
       }
     },
     "kimono": {
+      "Doll_KimonoPurple_Parts": {
+        "name": "Purple Kimono Doll (features)",
+        "price": "49.99",
+        "description": "All the featueres of our Kimono model",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
       "Doll_KimonoPurple_Front": {
-        "name": "Purple Kimono Doll",
+        "name": "Purple Kimono Doll (front)",
         "price": "49.99",
         "description": "Elegant doll in purple kimono",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Doll_KimonoPurple_Pose02": {
+        "name": "Purple Kimono Doll (sitting)",
+        "price": "49.99",
+        "description": "The Kimono model can sit and bend",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      }
+    },
+    "lady_unicorn": {
+      "Doll_Unicorn_Girl_Front": {
+        "name": "Lady Unicorn (front)",
+        "price": "49.99",
+        "description": "All the featueres of our Kimono model",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Doll_Unicorn_Girl_Parts": {
+        "name": "Lady Unicorn (features)",
+        "price": "49.99",
+        "description": "Elegant doll in purple kimono",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      }
+    },
+    "peacock": {
+      "Doll_Lady_Peacock_Pose01": {
+        "name": "Lady peacock (sitting)",
+        "price": "49.99",
+        "description": "Lady Peacock can sit on steps and bend knees",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Doll_Lady_Peacock_Pose04": {
+        "name": "Lady peacock (sitting back)",
+        "price": "49.99",
+        "description": "Lady Peacock can sit back and bend arms and knees",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+      "Doll_Lady_Peacock_Pose03": {
+        "name": "Lady peacock (laying down)",
+        "price": "49.99",
+        "description": "Lady Peacock can lay down and bend knees and arms",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      }
+    },
+    "weather_doll": {
+      "Doll_Cloud_Girl_Front": {
+        "name": "Cloud Girl elemental doll (front)",
+        "price": "49.99",
+        "description": "Lady Peacock can lay down and bend knees and arms",
+        "category": "new",
+        "available": true,
+        "materials": [
+          "cotton yarn",
+          "safety eyes",
+          "embroidery thread",
+          "accessories"
+        ]
+      },
+
+      "Doll_Sunny_Girl_Front": {
+        "name": "Sunny Girl elemental doll (front)",
+        "price": "49.99",
+        "description": "Lady Peacock can lay down and bend knees and arms",
         "category": "new",
         "available": true,
         "materials": [

@@ -1,6 +1,6 @@
 import { CarouselItem } from "@/types/Carousel";
-import CloudGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_CloudGirl_Front.jpg";
-import SunnyGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_SunnyGirl_Front.jpg";
+import CloudGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Cloud_Girl_Front.jpg";
+import SunnyGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Sunny_Girl_Front.jpg";
 
 export const carouselItems: CarouselItem[] = [
   {
