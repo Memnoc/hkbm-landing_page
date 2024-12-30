@@ -10,6 +10,7 @@ import OurStory from "@/pages/about/OurStory";
 import Process from "@/pages/about/Process";
 import Reviews from "@/pages/about/Reviews";
 import { RouteConfig } from "@/types/RouteConfig";
+import Explore from "@/pages/explore/Explore";
 
 export const routes: RouteConfig[] = [
   {
@@ -51,6 +52,10 @@ export const routes: RouteConfig[] = [
   {
     path: "/about/reviews",
     element: <Reviews />,
+  },
+  {
+    path: "/explore",
+    element: <Explore />,
   },
   {
     path: "*",

@@ -10,7 +10,7 @@ import logo from "../../assets/hkbm-assets/svg/logo-no-background.svg";
 
 export default function Navbar() {
   return (
-    <Menubar className="fixed top-0 w-full bg-pink-100 border-b border-pink-200 z-10">
+    <Menubar className="fixed top-0 w-full bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 z-10">
       <img
         src={logo}
         alt="Company logo"
@@ -20,7 +20,7 @@ export default function Navbar() {
         <MenubarTrigger className="text-purple-600 hover:text-purple-800">
           Gallery
         </MenubarTrigger>
-        <MenubarContent className="bg-white/95">
+        <MenubarContent className="bg-white/55 rounded-2xl">
           <MenubarItem className="text-purple-600 hover:bg-pink-50">
             <Link to="/gallery/all">All Images</Link>
           </MenubarItem>
@@ -65,6 +65,11 @@ export default function Navbar() {
             <Link to="/about/reviews">Reviews</Link>
           </MenubarItem>
         </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger className="text-white bg-pink-400 rounded-full">
+          <Link to="/explore">Explore</Link>
+        </MenubarTrigger>
       </MenubarMenu>
     </Menubar>
   );
