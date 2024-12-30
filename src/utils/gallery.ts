@@ -31,13 +31,13 @@ export const getGalleryItems = async (): Promise<GalleryItem[]> => {
         ?.replace(/\.(jpg|jpeg)$/, "") || "";
 
     // Add debug logging
-    console.log("Processing file:", {
-      fullPath: path,
-      pathParts,
-      collection,
-      subCollection,
-      fileName,
-    });
+    // console.log("Processing file:", {
+    //   fullPath: path,
+    //   pathParts,
+    //   collection,
+    //   subCollection,
+    //   fileName,
+    // });
 
     if (!isMainCollection(collection) || !isSubCollection(subCollection)) {
       console.warn(
@@ -48,16 +48,16 @@ export const getGalleryItems = async (): Promise<GalleryItem[]> => {
 
     try {
       // Log the metadata path we're trying to access
-      console.log("Looking for metadata at:", {
-        collection,
-        subCollection,
-        fileName,
-        hasMetadata: !!typedMetadata[collection]?.[subCollection]?.[fileName],
-        availableCollections: Object.keys(typedMetadata),
-        availableSubCollections: collection
-          ? Object.keys(typedMetadata[collection] || {})
-          : [],
-      });
+      // console.log("Looking for metadata at:", {
+      //   collection,
+      //   subCollection,
+      //   fileName,
+      //   hasMetadata: !!typedMetadata[collection]?.[subCollection]?.[fileName],
+      //   availableCollections: Object.keys(typedMetadata),
+      //   availableSubCollections: collection
+      //     ? Object.keys(typedMetadata[collection] || {})
+      //     : [],
+      // });
 
       const metadata = typedMetadata[collection]?.[subCollection]?.[fileName];
 
@@ -75,7 +75,7 @@ export const getGalleryItems = async (): Promise<GalleryItem[]> => {
       }
 
       // Log the found metadata
-      console.log("Found metadata:", metadata);
+      // console.log("Found metadata:", metadata);
 
       return {
         ...createDefaultItem(index, fileName, url, collection, subCollection), // Base defaults
