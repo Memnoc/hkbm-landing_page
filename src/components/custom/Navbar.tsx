@@ -8,7 +8,7 @@ export default function Navbar() {
       <img
         src={logo}
         alt="Company logo"
-        className="h-6 md:h lg:h w-auto fixed left-4"
+        className="h-6 md:h lg:h w-auto absolute left-4 z-10"
       />
       <MenubarMenu>
         <MenubarTrigger className="text-purple-600 hover:text-purple-800">
