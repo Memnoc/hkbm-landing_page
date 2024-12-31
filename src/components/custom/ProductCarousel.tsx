@@ -12,10 +12,10 @@ import { carouselItems } from "@/data/carousel-data";
 export default function ProductCarousel() {
   const items: ICarouselItem[] = carouselItems;
   return (
-    <div className="mt-16">
+    <div className="relative bg-white">
       {" "}
       {/* Container for both header and carousel */}
-      <h2 className="text-2xl font-bold text-purple-700 text-center mb-2">
+      <h2 className="relative text-4xl font-bold text-purple-700 text-center pt-44">
         Best Sellers
       </h2>
       <div className="w-full flex justify-center items-center">
