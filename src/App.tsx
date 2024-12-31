@@ -7,7 +7,7 @@ import { routes } from "./routes";
 function App() {
   return (
     <BrowserRouter>
-      <div className="navbar_container bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 min-h-screen">
+      <div className="navbar_container bg-pink-100 min-h-screen">
         <Navbar />
         <Routes>
           {routes.map((route) => (
