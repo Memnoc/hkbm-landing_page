@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        puff: ["DynaPuff", "cursive"],
+        fauna: ["Fauna One", ...fontFamily.serif],
+      },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
       },

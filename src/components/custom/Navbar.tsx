@@ -7,11 +7,16 @@ export default function Navbar() {
   return (
     <>
       <Menubar className="flex justify-end right-4 top-0 w-full bg-white pt-2 z-10">
-        <img
-          src={logo}
-          alt="Company logo"
-          className="h-6 md:h lg:h w-auto absolute left-4 z-10"
-        />
+        <div className="flex justify-start">
+          <p className="font-puff text-2xl absolute left-36 z-10 pt-2">
+            Hooked By Mei
+          </p>
+          <img
+            src={logo}
+            alt="Company logo"
+            className="h-16 w-auto absolute left-12 z-10 pb-2"
+          />
+        </div>
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
             <Link to="/">Home</Link>
@@ -38,7 +43,7 @@ export default function Navbar() {
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
-      <Wave color="white" />
+      <Wave color="white" className="fill-${color}" />
     </>
   );
 }

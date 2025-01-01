@@ -5,7 +5,7 @@ import ProductCarousel from "./ProductCarousel";
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col">
         {" "}
         {/* Hero section */}
         <div className="container mx-auto px-4 md:px-8 lg:px-12 mt-32">
@@ -46,9 +46,15 @@ export default function Hero() {
           </div>
         </div>
         {/* Carousel section */}
-        <ProductCarousel />
-        <ProductCarousel />
-        <ProductCarousel />
+        <ProductCarousel
+          title="Discover The Magic"
+          subtitle="About Our Crochet Creation"
+        />
+        <ProductCarousel title="Crochet Charm" subtitle="Amigurumi Artistry" />
+        <ProductCarousel
+          title="Handmade Heirlooms"
+          subtitle="Crochet Creation"
+        />
       </div>
     </>
   );

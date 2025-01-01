@@ -9,14 +9,25 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CarouselItem as ICarouselItem } from "@/types/Carousel";
 import { carouselItems } from "@/data/carousel-data";
 
-export default function ProductCarousel() {
+interface ProductCarouselProps {
+  title: string;
+  subtitle: string;
+}
+
+export default function ProductCarousel({
+  title,
+  subtitle,
+}: ProductCarouselProps) {
   const items: ICarouselItem[] = carouselItems;
   return (
     <div className="relative bg-white">
       {" "}
       {/* Container for both header and carousel */}
-      <h2 className="relative text-4xl font-bold text-purple-700 text-center pt-12">
-        Best Sellers
+      <p className="font-puff relative text-[#F36557] text-2xl font-bold text-center pt-12">
+        {title}
+      </p>
+      <h2 className="relative font-puff text-6xl font-bold text-black text-center pt-2">
+        {subtitle}
       </h2>
       <div className="w-full flex justify-center items-center">
         <Carousel
