@@ -3,7 +3,7 @@ export const Wave = ({ color = "pink-100", className = "" }) => {
   return (
     <div className={`absolute w-full h-40 overflow-hidden ${className}`}>
       <svg
-        className="absolute w-full h-full pb-12"
+        className="absolute w-full h-full pb-18"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >
