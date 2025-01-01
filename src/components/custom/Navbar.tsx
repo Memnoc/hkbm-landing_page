@@ -6,7 +6,7 @@ import { Wave } from "./Weave";
 export default function Navbar() {
   return (
     <>
-      <Menubar className="flex justify-end right-4 top-0 w-full bg-white pt-2 z-10">
+      <Menubar className="flex justify-end right-4 top-0 w-full bg-white pt-2">
         <div className="flex justify-start">
           <p className="font-puff text-2xl absolute left-36 z-10 pt-2">
             Hooked By Mei

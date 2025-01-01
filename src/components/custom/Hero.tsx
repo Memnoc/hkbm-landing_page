@@ -94,11 +94,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <ProductCarousel title="Crochet Charm" subtitle="Amigurumi Artistry" />
-        <ProductCarousel
-          title="Handmade Heirlooms"
-          subtitle="Crochet Creation"
-        />
       </div>
     </>
   );
