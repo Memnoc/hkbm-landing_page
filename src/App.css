@@ -16,25 +16,3 @@
     opacity: 0;
   }
 }
-
-/* Weave */
-/*.custom-shape-divider-bottom {*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  overflow: hidden;*/
-/*  line-height: 0;*/
-/*  transform: rotate(180deg);*/
-/*}*/
-/**/
-/*.custom-shape-divider-bottom-1735638272 svg {*/
-/*  position: relative;*/
-/*  display: block;*/
-/*  width: calc(132% + 1.3px);*/
-/*  height: 252px;*/
-/*}*/
-/**/
-/*.custom-shape-divider-bottom-1735638272 .shape-fill {*/
-/*  fill: #f0cff1;*/
-/*}*/

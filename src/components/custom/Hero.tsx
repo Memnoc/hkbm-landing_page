@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="flex flex-col space-y-2">
         {" "}
         {/* Hero section */}
-        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 mt-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left column - content */}
             <div className="flex flex-col space-y-6">
