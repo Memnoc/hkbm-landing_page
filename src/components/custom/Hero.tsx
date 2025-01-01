@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Image from "@/assets/dolls/front-page-doll.jpeg";
 import ProductCarousel from "./ProductCarousel";
+import sneezing from "@/assets/hkbm-assets/doodles/sneezing-no-bg.png";
+import bathing from "@/assets/hkbm-assets/doodles/bath-no-bg.png";
+import animals from "@/assets/hkbm-assets/doodles/animals-no-bg.png";
 
 export default function Hero() {
   return (
@@ -48,10 +51,49 @@ export default function Hero() {
           </div>
         </div>
         {/* Carousel section */}
-        <ProductCarousel
-          title="Discover The Magic"
-          subtitle="About Our Crochet Creation"
-        />
+        <div>
+          {/* First carousel with doodle */}
+          <div className="relative">
+            <img
+              src={sneezing}
+              alt="doodle_sneezing"
+              className="absolute -top-[3vw] left-[1vw] w-[20vw] max-w-[220px] z-20 opacity-90"
+            />
+            <div className="relative z-10">
+              <ProductCarousel
+                title="Discover The Magic"
+                subtitle="About Our Crochet Creation"
+              />
+            </div>
+          </div>
+          {/* Other carousels */}
+          <div className="relative">
+            <img
+              src={bathing}
+              alt="doodle_bathing"
+              className="absolute -top-[4vw] right-[5vw] w-[20vw] max-w-[280px] z-20 opacity-90"
+            />
+            <div className="relative z-10">
+              <ProductCarousel
+                title="Crochet Charm"
+                subtitle="Amigurumi Artistry"
+              />
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              src={animals}
+              alt="doodle_sneezing"
+              className="absolute -top-[1vw] left-[2vw] w-[20vw] max-w-[280px] z-20 opacity-90"
+            />
+            <div className="relative z-10">
+              <ProductCarousel
+                title="Handmade Heirlooms"
+                subtitle="Crochet Creation"
+              />
+            </div>
+          </div>
+        </div>
         <ProductCarousel title="Crochet Charm" subtitle="Amigurumi Artistry" />
         <ProductCarousel
           title="Handmade Heirlooms"
