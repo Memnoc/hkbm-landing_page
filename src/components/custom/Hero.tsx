@@ -12,15 +12,17 @@ export default function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left column - content */}
             <div className="flex flex-col space-y-6">
-              <p className="text-lg text-pink-600 font-semibold">
+              <p className="font-puff text-lg text-[#F36557] font-semibold">
                 100+ happy users
               </p>
-              <h2 className="text-3xl md:text-4xl text-purple-700 font-bold">
+              <h1 className="font-puff text-2xl md:text-4xl text-purple-700 font-bold">
                 Join the army of furry and fluffy friends
-              </h2>
+              </h1>
               <p className="text-lg text-gray-700">
                 Submit your request and design and we will turn into{" "}
-                <span className="font-bold text-pink-600">a doll for you</span>
+                <span className="font-puff font-bold text-[#F36557]">
+                  a doll for you
+                </span>
               </p>
               {/* Buttons */}
               <div className="flex gap-4">

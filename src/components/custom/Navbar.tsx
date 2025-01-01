@@ -19,27 +19,37 @@ export default function Navbar() {
         </div>
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
-            <Link to="/">Home</Link>
+            <Link className="font-puff" to="/">
+              Home
+            </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
-            <Link to="/about">About</Link>
+            <Link className="font-puff" to="/about">
+              About
+            </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
-            <Link to="/shop">Shop</Link>
+            <Link className="font-puff" to="/shop">
+              Shop
+            </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="text-purple-600 hover:text-purple-800">
-            <Link to="/contact">Contact</Link>
+            <Link className="font-puff" to="/contact">
+              Contact
+            </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="text-white bg-pink-400 rounded-full">
-            <Link to="/gallery/all">Explore</Link>
+            <Link className="font-bold" to="/gallery/all">
+              Explore
+            </Link>
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
