@@ -15,7 +15,7 @@ export default function ProductCarousel() {
     <div className="relative bg-white">
       {" "}
       {/* Container for both header and carousel */}
-      <h2 className="relative text-4xl font-bold text-purple-700 text-center pt-44">
+      <h2 className="relative text-4xl font-bold text-purple-700 text-center pt-12">
         Best Sellers
       </h2>
       <div className="w-full flex justify-center items-center">
