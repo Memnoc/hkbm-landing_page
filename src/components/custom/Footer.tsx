@@ -12,7 +12,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-purple-900 mb-4">
               Contact Us
             </h3>
-            <p className="text-purple-700 mb-6">
+            <p className="text-purple-900 mb-6">
               Connect with us to learn more about our crochet creations
             </p>
             <form className="space-y-4">
@@ -32,7 +32,7 @@ const Footer = () => {
                 className="w-full p-3 rounded-lg border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
               {/* Submit message */}
-              <button className="bg-purple-400 text-white px-8 py-3 rounded-full hover:bg-purple-800 transition-colors">
+              <button className="font-bold bg-purple-400 text-[#240b36] px-8 py-3 rounded-full hover:bg-purple-600 transition-colors">
                 Send Message
               </button>
             </form>

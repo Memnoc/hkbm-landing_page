@@ -46,8 +46,8 @@ export default function Navbar() {
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-white bg-purple-400 hover:bg-purple-800 rounded-full">
-            <Link className="font-bold text-gray-100" to="/gallery/all">
+          <MenubarTrigger className="text-white bg-purple-400 hover:bg-purple-600 rounded-full">
+            <Link className="font-bold text-[#240b36]" to="/gallery/all">
               Explore
             </Link>
           </MenubarTrigger>

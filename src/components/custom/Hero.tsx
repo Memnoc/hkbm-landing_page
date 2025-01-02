@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Image from "@/assets/dolls/Crochet/dolls/weather_doll/front-page-doll-grey-bg.png";
+import Image from "@/assets/dolls/Crochet/dolls/weather_doll/front-page-doll-grey-bg-Photoroom.png";
 import ProductCarousel from "./ProductCarousel";
 import sneezing from "@/assets/hkbm-assets/doodles/sneezing-no-bg.png";
 import bathing from "@/assets/hkbm-assets/doodles/bath-no-bg.png";
@@ -28,7 +28,7 @@ export default function Hero() {
               </p>
               {/* Buttons */}
               <div className="flex gap-4">
-                <Button className="bg-purple-400 hover:bg-purple-500 text-gray-100  font-bold rounded-full w-32">
+                <Button className="bg-purple-400 hover:bg-purple-600 text-[#240b36]  font-bold rounded-full w-32">
                   Shop Now
                 </Button>
               </div>
