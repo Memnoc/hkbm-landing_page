@@ -15,25 +15,21 @@ export default function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left column - content */}
             <div className="flex flex-col space-y-6">
-              <p className="font-puff text-lg text-[#F36557] font-semibold">
-                100+ happy users
-              </p>
-              <h1 className="font-puff text-2xl md:text-4xl text-purple-700 font-bold">
+              <h1 className="font-puff text-8xl md:text-6xl text-black font-bold">
                 Join the army of furry and fluffy friends
               </h1>
-              <p className="text-lg text-gray-700">
-                Submit your request and design and we will turn into{" "}
+              <p className="text-lg text-gray-400">
+                Immerse yourself in the world of handcrafted crochet dolls,
+                animals and amigurumi. Explore our collection and submit your
+                request or design and we will turn into{" "}
                 <span className="font-puff font-bold text-[#F36557]">
                   a doll for you
                 </span>
               </p>
               {/* Buttons */}
               <div className="flex gap-4">
-                <Button className="bg-purple-400 hover:bg-purple-500 text-white rounded w-32">
-                  Users feedback
-                </Button>
-                <Button className="bg-pink-400 hover:bg-pink-500 text-white rounded w-32">
-                  Get your doll
+                <Button className="bg-purple-400 hover:bg-purple-500 text-gray-100  font-bold rounded-full w-32">
+                  Shop Now
                 </Button>
               </div>
             </div>

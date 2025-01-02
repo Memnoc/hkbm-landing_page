@@ -18,36 +18,36 @@ export default function Navbar() {
           />
         </div>
         <MenubarMenu>
-          <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
             <Link className="font-puff" to="/">
               Home
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
             <Link className="font-puff" to="/about">
               About
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
             <Link className="font-puff" to="/shop">
               Shop
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-purple-600 hover:text-purple-800">
+          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
             <Link className="font-puff" to="/contact">
               Contact
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-white bg-pink-400 rounded-full">
-            <Link className="font-bold" to="/gallery/all">
+          <MenubarTrigger className="text-white bg-purple-400 hover:bg-purple-800 rounded-full">
+            <Link className="font-bold text-gray-100" to="/gallery/all">
               Explore
             </Link>
           </MenubarTrigger>
