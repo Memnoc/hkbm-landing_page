@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Image from "@/assets/dolls/front-page-doll.jpeg";
+import Image from "@/assets/dolls/Crochet/dolls/weather_doll/front-page-doll-grey-bg.png";
 import ProductCarousel from "./ProductCarousel";
 import sneezing from "@/assets/hkbm-assets/doodles/sneezing-no-bg.png";
 import bathing from "@/assets/hkbm-assets/doodles/bath-no-bg.png";
@@ -53,7 +53,7 @@ export default function Hero() {
             <img
               src={sneezing}
               alt="doodle_sneezing"
-              className="absolute -top-[3vw] left-[1vw] w-[20vw] max-w-[220px] z-20 opacity-90"
+              className="absolute -top-[3vw] -left-[2vw] w-[20vw] max-w-[200px] z-20 opacity-90"
             />
             <div className="relative z-10">
               <ProductCarousel

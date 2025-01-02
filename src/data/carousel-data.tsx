@@ -1,8 +1,8 @@
 import { CarouselItem } from "@/types/Carousel";
-import CloudGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Cloud_Girl_Front.jpg";
-import SunnyGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Sunny_Girl_Front.jpg";
-import GenshinGroup from "@/assets/dolls/Crochet/dolls/genshin/Genshin_Group.jpg";
-import Nahida from "@/assets/dolls/Crochet/dolls/genshin/Genshin_Nahida_Front.jpg";
+import CloudGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Sunny_Girl_Front-blue-bg.png";
+import SunnyGirl from "@/assets/dolls/Crochet/dolls/weather_doll/Doll_Lady_Peacock_Pose04-orange-bg.png";
+import GenshinGroup from "@/assets/dolls/Crochet/dolls/genshin/Genshin_Nahida_Front-green-bg.png";
+import Nahida from "@/assets/dolls/Crochet/dolls/genshin/Genshin_Nahida_Front-green-bg.png";
 
 export const carouselItems: CarouselItem[] = [
   {
