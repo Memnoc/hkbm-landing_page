@@ -23,7 +23,7 @@ export default function ProductCarousel({
     <div className="relative bg-white">
       {" "}
       {/* Container for both header and carousel */}
-      <p className="font-puff relative text-[#F36557] text-2xl font-bold text-center pt-12">
+      <p className="font-puff relative text-[#c92c78] text-2xl font-bold text-center pt-12">
         {title}
       </p>
       <h2 className="relative font-puff text-6xl font-bold text-black text-center pt-2">

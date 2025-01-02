@@ -18,28 +18,28 @@ export default function Navbar() {
           />
         </div>
         <MenubarMenu>
-          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
+          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
             <Link className="font-puff" to="/">
               Home
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
+          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
             <Link className="font-puff" to="/about">
               About
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
+          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
             <Link className="font-puff" to="/shop">
               Shop
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="text-[#F36557] hover:text-[#B5463B]">
+          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
             <Link className="font-puff" to="/contact">
               Contact
             </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
           </MenubarTrigger>
         </MenubarMenu>
       </Menubar>
-      <Wave color="white" className="fill-${color}" />
+      <Wave color="#fff" />
     </>
   );
 }

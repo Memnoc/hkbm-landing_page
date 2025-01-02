@@ -22,7 +22,7 @@ export default function Hero() {
                 Immerse yourself in the world of handcrafted crochet dolls,
                 animals and amigurumi. Explore our collection and submit your
                 request or design and we will turn into{" "}
-                <span className="font-puff font-bold text-[#F36557]">
+                <span className="font-puff font-bold text-[#c92c78]">
                   a doll for you
                 </span>
               </p>

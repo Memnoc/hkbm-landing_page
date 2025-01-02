@@ -3,8 +3,8 @@ import { Wave } from "./Weave";
 const Footer = () => {
   return (
     <footer className="relative bg-pink-100 pt-32 pb-16">
-      <Wave color="white" className="-top-1" />
-
+      <Wave color="#fff" className="-top-1" />
+      {/* Form */}
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between gap-12">
           {/* Contact */}
@@ -31,7 +31,8 @@ const Footer = () => {
                 rows={4}
                 className="w-full p-3 rounded-lg border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300"
               />
-              <button className="bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transition-colors">
+              {/* Submit message */}
+              <button className="bg-purple-400 text-white px-8 py-3 rounded-full hover:bg-purple-800 transition-colors">
                 Send Message
               </button>
             </form>
