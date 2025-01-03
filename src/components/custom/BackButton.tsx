@@ -22,7 +22,7 @@ export default function BackButton() {
     >
       <Button
         onClick={handleBack}
-        className="absolute top-20 right-4 bg-purple-100 hover:bg-purple-200 text-purple-700 transition-all duration-300 ease-in-out rounded z-40"
+        className="fixed top-40 right-4 bg-white font-bold hover:bg-purple-400 text-[#240b36] transition-all duration-300 ease-in-out rounded-full"
       >
         <ChevronLeft className="mr-2 h-4 w-4" />
         Back Home
