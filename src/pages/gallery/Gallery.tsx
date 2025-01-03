@@ -14,6 +14,7 @@ export default function Gallery() {
   const [activeCollection, setActiveCollection] = useState<
     MainCollection | "all"
   >("all");
+  console.log(activeCollection);
   const [activeSubCollection, setActiveSubCollection] = useState<
     SubCollection | "all"
   >("all");
