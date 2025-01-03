@@ -40,7 +40,10 @@ export default function Gallery() {
   return (
     <div className="pt-16">
       <div className="gallery-container animate-fade-in mx-auto px-8">
-        <h1 className="text-3xl font-bold text-purple-700 mb-8">Gallery</h1>
+        <div className="title-container flex flex-col mt-28 pb-28 text-center">
+          <h1 className="text-3xl font-bold text-purple-700 mb-4">Gallery</h1>
+          <p>Our full collection of furry friends!</p>
+        </div>
 
         <FilterControls
           activeCollection={activeCollection}
@@ -50,8 +53,8 @@ export default function Gallery() {
         />
 
         <GalleryGrid items={items} />
+        <BackButton />
       </div>
-      <BackButton />
     </div>
   );
 }

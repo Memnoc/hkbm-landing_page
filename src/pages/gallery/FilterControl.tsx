@@ -24,7 +24,7 @@ export default function FilterControls({
     <div className="mb-6 flex flex-col sm:flex-row gap-4 w-1/6 max-w-xl">
       <div className="flex-1">
         <Select value={activeCollection} onValueChange={onCollectionChange}>
-          <SelectTrigger className="w-full font-bold border-0 bg-white hover:bg-purple-400 text-[#240b36] rounded-full">
+          <SelectTrigger className="w-full font-bold border-0 bg-white hover:bg-purple-600 text-[#240b36] rounded-full">
             <SelectValue placeholder="Browse Collection" />
           </SelectTrigger>
           <SelectContent className="bg-purple-50 border-pink-200">
