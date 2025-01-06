@@ -26,8 +26,12 @@ export interface GalleryMetadata {
 export interface GalleryItem extends GalleryMetadata {
   id: number;
   image: string;
+  images?: string[];
   collection: MainCollection;
   subCollection: SubCollection;
+  fullDescription?: string;
+  dimensions?: string;
+  material?: string;
 }
 
 export interface GalleryData {

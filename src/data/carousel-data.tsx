@@ -7,11 +7,22 @@ import Nahida from "@/assets/dolls/Crochet/dolls/genshin/Genshin_Nahida_Front-gr
 export const carouselItems: CarouselItem[] = [
   {
     id: 1,
-    name: "CloudGirl",
+    name: "Cloud Girl",
     image: CloudGirl,
-    price: "$29.99",
-    description:
-      "Sweet doll with cozy cloud hat, perfect for dreamy adventures",
+    images: [CloudGirl, SunnyGirl, GenshinGroup],
+    price: "29.99",
+    description: "Sweet doll with cozy cloud hat",
+    fullDescription: `Our Cloud Girl doll is a handcrafted masterpiece that brings whimsy and comfort together. 
+    Each doll is carefully crocheted using premium cotton yarn, featuring:
+    
+    • A removable cloud-shaped hat with delicate embroidered details
+    • Soft, huggable body perfect for cuddles
+    • Hand-stitched facial features for a unique expression
+    • Durable construction for long-lasting play
+    
+    The perfect companion for bedtime stories and imaginative play!`,
+    dimensions: "8 inches tall",
+    material: "Premium cotton yarn, polyester filling",
   },
 
   {
