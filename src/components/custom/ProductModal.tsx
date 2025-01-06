@@ -4,8 +4,14 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { GalleryItem } from "@/types/Gallery";
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface ProductModalProps {
@@ -19,7 +25,7 @@ export default function ProductModal({
   isOpen,
   onClose,
 }: ProductModalProps) {
-  const [selectedImage, setSelectedImage] = useState(0);
+  const images = item.images || [item.image];
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -32,26 +38,41 @@ export default function ProductModal({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
-            <img
-              src={item.images?.[selectedImage] || item.image}
-              alt={item.name}
-              className="w-full aspect-square object-cover rounded-xl"
-            />
+            <Carousel
+              opts={{
+                align: "center",
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {images.map((img, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <img
+                        src={img}
+                        alt={`${item.name} - View ${index + 1}`}
+                        className="w-full aspect-square object-cover rounded-lg"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {images.length > 1 && (
+                <>
+                  <CarouselPrevious className="text-lg font-semibold text-purple-800" />
+                  <CarouselNext className="text-lg font-semibold text-purple-800" />
+                </>
+              )}
+            </Carousel>
 
-            {item.images && item.images.length > 1 && (
+            {images.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
-                {item.images.map((img, index) => (
-                  <Card
-                    key={index}
-                    className={`cursor-pointer ${
-                      selectedImage === index ? "ring-2 ring-purple-500" : ""
-                    }`}
-                    onClick={() => setSelectedImage(index)}
-                  >
+                {images.map((img, index) => (
+                  <Card key={index}>
                     <CardContent className="p-2">
                       <img
                         src={img}
-                        alt={`${item.name} view ${index + 1}`}
+                        alt={`${item.name} thumbnail ${index + 1}`}
                         className="w-full aspect-square object-cover rounded"
                       />
                     </CardContent>
