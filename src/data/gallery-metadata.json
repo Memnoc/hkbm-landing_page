@@ -68,6 +68,14 @@
         "available": true,
         "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
       },
+      "Bunny_M_DungareeRed_Back": {
+        "name": "Bunny in Red Dungaree (M)",
+        "price": "29.99",
+        "description": "Cute bunny in red dungarees",
+        "category": "new",
+        "available": true,
+        "materials": ["cotton yarn", "safety eyes", "embroidery thread"]
+      },
 
       "Bunny_M_Tutu_Pose": {
         "name": "Tutu Bunny (M)",
@@ -365,7 +373,7 @@
           "accessories"
         ]
       },
-      "Genshin_Nahida_Front": {
+      "Genshin_Nahida_Front-green-bg": {
         "name": "Nahida (front)",
         "price": "44.99",
         "description": "Nahida inspired ",

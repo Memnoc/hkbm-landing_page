@@ -12,7 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { GalleryItem } from "@/types/Gallery";
-import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 interface ProductModalProps {
   item: GalleryItem;
@@ -25,7 +25,10 @@ export default function ProductModal({
   isOpen,
   onClose,
 }: ProductModalProps) {
-  const images = item.images || [item.image];
+  // Filter out duplicates from relatedImages array
+  const uniqueImages = Array.from(
+    new Set([item.image, ...(item.relatedImages || [])]),
+  );
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -37,19 +40,21 @@ export default function ProductModal({
         </DialogHeader>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-4">
+          {/* Image Carousel */}
+          <div>
             <Carousel
               opts={{
-                align: "center",
+                align: "start",
                 loop: true,
               }}
+              className="w-full"
             >
               <CarouselContent>
-                {images.map((img, index) => (
+                {uniqueImages.map((imgUrl, index) => (
                   <CarouselItem key={index}>
                     <div className="p-1">
                       <img
-                        src={img}
+                        src={imgUrl}
                         alt={`${item.name} - View ${index + 1}`}
                         className="w-full aspect-square object-cover rounded-lg"
                       />
@@ -57,60 +62,70 @@ export default function ProductModal({
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              {images.length > 1 && (
+              {uniqueImages.length > 1 && (
                 <>
-                  <CarouselPrevious className="text-lg font-semibold text-purple-800" />
-                  <CarouselNext className="text-lg font-semibold text-purple-800" />
+                  <CarouselPrevious className="ml-20" />
+                  <CarouselNext className="mr-20" />
                 </>
               )}
             </Carousel>
-
-            {images.length > 1 && (
-              <div className="grid grid-cols-4 gap-2">
-                {images.map((img, index) => (
-                  <Card key={index}>
-                    <CardContent className="p-2">
-                      <img
-                        src={img}
-                        alt={`${item.name} thumbnail ${index + 1}`}
-                        className="w-full aspect-square object-cover rounded"
-                      />
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            )}
           </div>
 
+          {/* Product Details */}
           <div className="space-y-6">
+            {/* Price and Availability */}
+            <div className="flex items-center justify-between">
+              <p className="text-2xl font-bold text-pink-600">{item.price}</p>
+              <Badge
+                variant={item.available ? "default" : "secondary"}
+                className={item.available ? "bg-green-500" : "bg-gray-500"}
+              >
+                {item.available ? "In Stock" : "Out of Stock"}
+              </Badge>
+            </div>
+
+            {/* Description */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900">
                 Description
               </h3>
-              <p className="mt-2 text-gray-600">
-                {item.fullDescription || item.description}
-              </p>
+              <p className="mt-2 text-gray-600">{item.description}</p>
             </div>
 
+            {/* Materials */}
+            {item.materials && item.materials.length > 0 && (
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Materials
+                </h3>
+                <ul className="mt-2 list-disc list-inside text-gray-600">
+                  {item.materials.map((material, index) => (
+                    <li key={index}>{material}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Category Info */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900">Details</h3>
               <dl className="mt-2 space-y-2">
                 <div className="flex justify-between">
-                  <dt className="text-gray-600">Price</dt>
-                  <dd className="text-pink-600 font-medium">${item.price}</dd>
+                  <dt className="text-gray-600">Category</dt>
+                  <dd className="text-gray-900 capitalize">{item.category}</dd>
                 </div>
-                {item.dimensions && (
-                  <div className="flex justify-between">
-                    <dt className="text-gray-600">Dimensions</dt>
-                    <dd className="text-gray-900">{item.dimensions}</dd>
-                  </div>
-                )}
-                {item.material && (
-                  <div className="flex justify-between">
-                    <dt className="text-gray-600">Material</dt>
-                    <dd className="text-gray-900">{item.material}</dd>
-                  </div>
-                )}
+                <div className="flex justify-between">
+                  <dt className="text-gray-600">Collection</dt>
+                  <dd className="text-gray-900 capitalize">
+                    {item.collection}
+                  </dd>
+                </div>
+                <div className="flex justify-between">
+                  <dt className="text-gray-600">Type</dt>
+                  <dd className="text-gray-900 capitalize">
+                    {item.subCollection.replace(/_/g, " ")}
+                  </dd>
+                </div>
               </dl>
             </div>
           </div>

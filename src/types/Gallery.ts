@@ -32,6 +32,7 @@ export interface GalleryItem extends GalleryMetadata {
   fullDescription?: string;
   dimensions?: string;
   material?: string;
+  relatedImages?: string[];
 }
 
 export interface GalleryData {

@@ -4,22 +4,33 @@ import {
   MainCollection,
   SubCollection,
   GalleryData,
+  GalleryMetadata,
 } from "@/types/Gallery";
 import { formatItemName } from "./formatItemNames";
 
-// INFO: Dinamically laod JPEGS
+// INFO: Dynamically load JPEGS
 const images = import.meta.glob("/src/assets/dolls/Crochet/**/**/**/*.*", {
   eager: true,
   as: "url",
 }) as Record<string, string>;
 
-// WARN: Not sure 'unkown here is good'
+// WARN: Not sure 'unknown' here is good
 const typedMetadata = galleryMetadata as unknown as GalleryData;
 
-// NOTE: map image paths to urls
-// Extract collections and sub-collections
+// NOTE: map image paths to urls and group related images
 export const getGalleryItems = async (): Promise<GalleryItem[]> => {
-  return Object.entries(images).map(([path, url], index) => {
+  // First, group images by their base name
+  const groupedItems = new Map<
+    string,
+    {
+      paths: string[];
+      collection: MainCollection;
+      subCollection: SubCollection;
+      metadata: GalleryMetadata | undefined;
+    }
+  >();
+
+  Object.entries(images).forEach(([path, url]) => {
     const pathParts = path.split("/");
     const collectionIndex = pathParts.indexOf("Crochet") + 1;
     const collection = pathParts[collectionIndex];
@@ -30,44 +41,84 @@ export const getGalleryItems = async (): Promise<GalleryItem[]> => {
         .pop()
         ?.replace(/\.(jpg|png|jpeg)$/, "") || "";
 
+    // Get base name by removing suffixes - expanded pattern
+    const baseName = fileName.replace(
+      /_(Front|Back|Side|Persp|Pose\d+|Left|Right|Top|Group|Parts).*$/,
+      "",
+    );
+
     if (!isMainCollection(collection) || !isSubCollection(subCollection)) {
       console.warn(
         `Invalid collection or subcollection: ${collection}/${subCollection}`,
       );
-      return createDefaultItem(index, fileName, url, "animals", "bunnies");
+      return;
     }
 
+    const metadata = typedMetadata[collection]?.[subCollection]?.[fileName];
+
+    if (!groupedItems.has(baseName)) {
+      groupedItems.set(baseName, {
+        paths: [url],
+        collection: collection as MainCollection,
+        subCollection: subCollection as SubCollection,
+        metadata,
+      });
+    } else {
+      groupedItems.get(baseName)?.paths.push(url);
+    }
+  });
+
+  // Convert grouped items to GalleryItems
+  return Array.from(groupedItems.entries()).map(([baseName, data], index) => {
+    const mainImage = data.paths[0]; // Use first image as main
+
     try {
-      const metadata = typedMetadata[collection]?.[subCollection]?.[fileName];
+      // Get metadata from the first variant if it exists
+      const metadata =
+        data.metadata ||
+        typedMetadata[data.collection]?.[data.subCollection]?.[baseName];
 
       if (!metadata) {
-        console.warn(
-          `No metadata found for ${fileName} in ${collection}/${subCollection}`,
-        );
+        console.warn(`No metadata found for ${baseName}`);
         return createDefaultItem(
           index,
-          fileName,
-          url,
-          collection,
-          subCollection,
+          baseName,
+          mainImage,
+          data.collection,
+          data.subCollection,
+          data.paths,
         );
       }
 
       return {
-        ...createDefaultItem(index, fileName, url, collection, subCollection), // Base defaults
-        ...metadata, // Override with actual metadata
+        ...createDefaultItem(
+          index,
+          baseName,
+          mainImage,
+          data.collection,
+          data.subCollection,
+          data.paths,
+        ),
+        ...metadata,
         id: index + 1,
-        image: url,
-        collection,
-        subCollection,
+        image: mainImage,
+        relatedImages: data.paths,
+        collection: data.collection,
+        subCollection: data.subCollection,
       } as GalleryItem;
     } catch (error) {
-      console.error(`Error accessing metadata for ${fileName}:`, error);
-      return createDefaultItem(index, fileName, url, collection, subCollection);
+      console.error(`Error accessing metadata for ${baseName}:`, error);
+      return createDefaultItem(
+        index,
+        baseName,
+        mainImage,
+        data.collection,
+        data.subCollection,
+        data.paths,
+      );
     }
   });
 };
-
 //NOTE: Type guard functions
 function isMainCollection(value: string): value is MainCollection {
   return ["animals", "dolls"].includes(value);
@@ -97,6 +148,7 @@ function createDefaultItem(
   url: string,
   collection: MainCollection,
   subCollection: SubCollection,
+  relatedImages: string[],
 ): GalleryItem {
   return {
     id: index + 1,
@@ -109,10 +161,11 @@ function createDefaultItem(
     image: url,
     collection,
     subCollection,
+    relatedImages,
   };
 }
 
-// NOTE:: filtering logic
+// NOTE: filtering logic
 export const filterByCollection = (
   items: GalleryItem[],
   collection: MainCollection | "all",
