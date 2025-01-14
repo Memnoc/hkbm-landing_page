@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { GalleryItem } from "@/types/Gallery";
 import { Badge } from "@/components/ui/badge";
+import ShopButton from "./ShopButton";
 
 interface ProductModalProps {
   item: GalleryItem;
@@ -78,10 +79,13 @@ export default function ProductModal({
               <p className="text-2xl font-bold text-pink-600">{item.price}</p>
               <Badge
                 variant={item.available ? "default" : "secondary"}
-                className={item.available ? "bg-green-500" : "bg-gray-500"}
+                className={
+                  item.available ? "bg-green-500 rounded-full" : "bg-gray-500"
+                }
               >
                 {item.available ? "In Stock" : "Out of Stock"}
               </Badge>
+              <ShopButton />
             </div>
 
             {/* Description */}
