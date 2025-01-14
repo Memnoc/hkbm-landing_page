@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ChevronLeft } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -27,9 +27,9 @@ export default function ShopButton() {
     >
       <Button
         onClick={handleBack}
-        className="absolute w-fit top-40 right-4 bg-purple-400 hover:bg-purple-600 rounded-full font-bold text-[#240b36]"
+        className="absolute bottom-4 w-fit right-4 bg-purple-400 hover:bg-purple-600 rounded-full font-bold text-[#240b36]"
       >
-        <ChevronLeft className="mr-2 h-4 w-4" />
+        <ChevronRight className="h-4 w-4" />
         Shop Item
       </Button>
     </div>

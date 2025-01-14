@@ -24,7 +24,7 @@ export default function BackButton() {
         onClick={handleBack}
         className="absolute w-fit top-40 right-4 bg-white font-bold hover:bg-purple-400 text-[#240b36] transition-all duration-300 ease-in-out rounded-full"
       >
-        <ChevronLeft className="mr-2 h-4 w-4" />
+        <ChevronLeft className="h-4 w-4" />
         Back Home
       </Button>
     </div>

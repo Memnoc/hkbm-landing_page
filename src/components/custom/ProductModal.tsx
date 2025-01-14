@@ -73,19 +73,20 @@ export default function ProductModal({
           </div>
 
           {/* Product Details */}
-          <div className="space-y-6">
+          <div className="space-y-2">
             {/* Price and Availability */}
             <div className="flex items-center justify-between">
               <p className="text-2xl font-bold text-pink-600">{item.price}</p>
               <Badge
                 variant={item.available ? "default" : "secondary"}
                 className={
-                  item.available ? "bg-green-500 rounded-full" : "bg-gray-500"
+                  item.available
+                    ? "bg-green-500 rounded-full"
+                    : "bg-gray-500 rounded-full"
                 }
               >
                 {item.available ? "In Stock" : "Out of Stock"}
               </Badge>
-              <ShopButton />
             </div>
 
             {/* Description */}
@@ -134,6 +135,7 @@ export default function ProductModal({
             </div>
           </div>
         </div>
+        <ShopButton />
       </DialogContent>
     </Dialog>
   );
