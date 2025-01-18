@@ -22,7 +22,7 @@ const TimelineItem = ({
   const isCurrent = step === currentStep;
 
   return (
-    <div className="flex items-start relative">
+    <div className="flex items-start relative mt-4">
       {/* Connector Line */}
       {!isLast && (
         <div

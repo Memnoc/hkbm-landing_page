@@ -35,10 +35,10 @@ export default function Shop() {
                 and attention to detail.
               </p>
               <Button
-                className="bg-purple-600 hover:bg-purple-700"
+                className="text-white bg-purple-400 hover:bg-purple-600 text-[#240b36] rounded-full"
                 onClick={() => setCurrentStep(2)}
               >
-                <ShoppingCart className="mr-2 h-4 w-4" />
+                <ShoppingCart className="mr-2 h-4 w-4 bg-purple-400 hover:bg-purple-600 rounded-full" />
                 Start Shopping
               </Button>
             </div>
