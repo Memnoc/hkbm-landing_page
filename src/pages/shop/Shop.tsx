@@ -11,8 +11,8 @@ export default function Shop() {
     <div className="min-h-screen bg-pink-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Header Section */}
-        <div className="title-container flex flex-col mt-28 pb-16 text-center">
-          <h1 className="text-3xl font-bold text-purple-700 mb-4">Shop</h1>
+        <div className="title-container flex flex-col mt-32 pb-16 text-center">
+          <h1 className="text-3xl font-bold text-purple-700 mb-6">Shop</h1>
           <p className="text-gray-600">
             Follow these steps to complete your purchase
           </p>
@@ -38,7 +38,7 @@ export default function Shop() {
                 className="text-white bg-purple-400 hover:bg-purple-600 text-[#240b36] rounded-full"
                 onClick={() => setCurrentStep(2)}
               >
-                <ShoppingCart className="mr-2 h-4 w-4 bg-purple-400 hover:bg-purple-600 rounded-full" />
+                <ShoppingCart className="mr-2 h-4 w-4 rounded-full" />
                 Start Shopping
               </Button>
             </div>
