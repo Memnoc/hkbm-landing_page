@@ -37,7 +37,7 @@ const TimelineItem = ({
       <div className="flex flex-col items-center mr-4 z-10">
         <div
           className={cn(
-            "flex items-center justify-center w-10 h-10 rounded-full border-2",
+            "flex items-center justify-center w-10 h-10 rounded-full",
             isCompleted
               ? "bg-purple-500 border-purple-500"
               : isCurrent
@@ -108,7 +108,7 @@ export default function PurchaseTimeline({
   ];
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-sm">
+    <div className="max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-sm">
       {steps.map((step, index) => (
         <TimelineItem
           key={index}

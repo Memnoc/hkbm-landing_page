@@ -8,7 +8,7 @@ export default function Shop() {
   const [currentStep, setCurrentStep] = useState(1);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-pink-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Header Section */}
         <div className="title-container flex flex-col mt-28 pb-16 text-center">
