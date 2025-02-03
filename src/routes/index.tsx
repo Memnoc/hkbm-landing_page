@@ -1,14 +1,14 @@
 import Hero from "@/components/custom/Hero";
 import NotFound from "@/pages/not_found/NotFound";
 import { RouteConfig } from "@/types/RouteConfig";
-import About from "@/pages/about/About";
+import About from "@/pages/about/about/About";
 // import Shop from "@/pages/shop/Shop";
-import Contact from "@/pages/contact/Contact";
+// import Contact from "@/pages/contact/Contact";
 // import Gallery from "@/pages/gallery/Gallery";
 
 export const routes: RouteConfig[] = [
   {
-    path: "/",
+    path: "/home",
     element: <Hero />,
   },
   {
@@ -19,10 +19,10 @@ export const routes: RouteConfig[] = [
   //   path: "/shop",
   //   element: <Shop />,
   // },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
+  // {
+  //   path: "/contact",
+  //   element: <Contact />,
+  // },
   // {
   //   path: "/gallery/all",
   //   element: <Gallery />,
