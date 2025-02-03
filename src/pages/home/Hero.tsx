@@ -53,7 +53,7 @@ export default function Hero() {
             <img
               src={sneezing}
               alt="doodle_sneezing"
-              className="absolute -top-[3vw] -left-[2vw] w-[20vw] max-w-[200px] z-20 opacity-90"
+              className="absolute -top-[1vw] w-[20vw] max-w-[200px] z-20 opacity-90"
             />
             <div className="relative z-10">
               <ProductCarousel
