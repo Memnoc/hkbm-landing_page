@@ -5,7 +5,6 @@ export const Wave = ({
   color: string;
   className?: string;
 }) => {
-  console.log("Wave color prop:", color);
   return (
     <div className={`absolute w-full h-40 overflow-hidden ${className}`}>
       <svg

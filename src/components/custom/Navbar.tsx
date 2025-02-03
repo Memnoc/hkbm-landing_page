@@ -31,27 +31,27 @@ export default function Navbar() {
             </Link>
           </MenubarTrigger>
         </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
-            <Link className="font-puff" to="/shop">
-              Shop
-            </Link>
-          </MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]">
-            <Link className="font-puff" to="/contact">
-              Contact
-            </Link>
-          </MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="text-white bg-purple-400 hover:bg-purple-600 rounded-full">
-            <Link className="font-bold text-[#240b36]" to="/gallery/all">
-              Explore
-            </Link>
-          </MenubarTrigger>
-        </MenubarMenu>
+        {/* <MenubarMenu> */}
+        {/*   <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]"> */}
+        {/*     <Link className="font-puff" to="/shop"> */}
+        {/*       Shop */}
+        {/*     </Link> */}
+        {/*   </MenubarTrigger> */}
+        {/* </MenubarMenu> */}
+        {/* <MenubarMenu> */}
+        {/*   <MenubarTrigger className="text-[#c92c78] hover:text-[#a02360]"> */}
+        {/*     <Link className="font-puff" to="/contact"> */}
+        {/*       Contact */}
+        {/*     </Link> */}
+        {/*   </MenubarTrigger> */}
+        {/* </MenubarMenu> */}
+        {/* <MenubarMenu> */}
+        {/*   <MenubarTrigger className="text-white bg-purple-400 hover:bg-purple-600 rounded-full"> */}
+        {/*     <Link className="font-bold text-[#240b36]" to="/gallery/all"> */}
+        {/*       Explore */}
+        {/*     </Link> */}
+        {/*   </MenubarTrigger> */}
+        {/* </MenubarMenu> */}
       </Menubar>
       <Wave color="#fff" />
     </>

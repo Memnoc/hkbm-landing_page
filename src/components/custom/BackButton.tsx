@@ -16,7 +16,7 @@ export default function BackButton() {
       className={`transition-opacity duration-300 ${isLeaving ? "opacity-0" : "opacity-100"}`}
       onTransitionEnd={() => {
         if (isLeaving) {
-          navigate("/");
+          navigate("/home");
         }
       }}
     >
