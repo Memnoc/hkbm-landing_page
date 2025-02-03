@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Image from "@/assets/dolls/Crochet/dolls/weather_doll/front-page-doll-grey-bg-Photoroom.png";
+import Image from "@/assets/dolls/Crochet/dolls/weather_doll/front-page-doll-grey-bg.png";
 import ProductCarousel from "./ProductCarousel";
 import sneezing from "@/assets/hkbm-assets/doodles/sneezing-no-bg.png";
 import bathing from "@/assets/hkbm-assets/doodles/bath-no-bg.png";
@@ -62,7 +62,7 @@ export default function Hero() {
               />
             </div>
           </div>
-          {/* Other carousels */}
+          {/* Second carousel */}
           <div className="relative">
             <img
               src={bathing}
@@ -76,6 +76,7 @@ export default function Hero() {
               />
             </div>
           </div>
+          {/* Third carousel */}
           <div className="relative">
             <img
               src={animals}
