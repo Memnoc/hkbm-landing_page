@@ -46,4 +46,18 @@ export const carouselItems: CarouselItem[] = [
     price: "$34.99",
     description: "Genshin doll Nahida",
   },
+  {
+    id: 5,
+    name: "Nahida",
+    image: Nahida,
+    price: "$34.99",
+    description: "Genshin doll Nahida",
+  },
+  {
+    id: 6,
+    name: "Nahida",
+    image: Nahida,
+    price: "$34.99",
+    description: "Genshin doll Nahida",
+  },
 ];
